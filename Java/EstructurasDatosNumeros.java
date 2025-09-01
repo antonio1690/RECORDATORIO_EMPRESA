@@ -3,6 +3,7 @@ package Java;
 public class EstructurasDatosNumeros {
     public static void main(String[] args) {
         // Sacado de CoddyJava
+        // TIPOS DE DATOS PRIMITIVOS
         // Crear variables enteras
         int temperature = 28;
         int humidity = 65;
@@ -12,6 +13,16 @@ public class EstructurasDatosNumeros {
         double morningTemp = 22.5;
         double afternoonTemp = 28.8;
         double eveningTemp = 23.4;
+
+        // Crear variables con var (Detecta por si solo el tipo de dato que introduces)
+        var morningTempVar = 22.5;
+        var afternoonTempVar = 288;
+        var eveningTempVar = "234";
+
+        /*
+         * Puedes crear variables tipandolos explicitamente o con la variable var pero
+         * no las 2 a la vez
+         */
 
         // No modificar el código a continuación
         System.out.println("Current Temperature: " + temperature);
