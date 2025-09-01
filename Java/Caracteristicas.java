@@ -12,7 +12,8 @@ public class Caracteristicas {
      * Principios de Programación Orientada a Objetos
      * Es esencial dominar principios como:
      * 
-     * Encapsulamiento: limitar el acceso a los datos internos de una clase.
+     * Encapsulamiento:
+     * Limitar el acceso a los datos internos de una clase.
      * 
      * Herencia: reutilizar funcionalidades mediante clases derivadas.
      * 

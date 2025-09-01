@@ -2,6 +2,7 @@ package Java;
 
 public class EstructurasDatosNumeros {
     public static void main(String[] args) {
+        // Sacado de CoddyJava
         // Crear variables enteras
         int temperature = 28;
         int humidity = 65;
