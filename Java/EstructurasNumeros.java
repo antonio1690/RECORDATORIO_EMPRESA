@@ -1,6 +1,6 @@
 package Java;
 
-public class EstructurasDatosNumeros {
+public class EstructurasNumeros {
     public static void main(String[] args) {
         // Sacado de CoddyJava
         // TIPOS DE DATOS PRIMITIVOS

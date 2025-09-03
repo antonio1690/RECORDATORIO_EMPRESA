@@ -1,6 +1,6 @@
 package Java;
 
-public class EstructurasDatosCadenas {
+public class EstructurasCadenas {
     public static void main(String[] args) {
         // CADENA DE TEXTO
         String name = "Antonio";
