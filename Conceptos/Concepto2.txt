@@ -1,0 +1,50 @@
+Cookies, localStorage, sessionStorage
+Cookies: Pequeños archivos de texto que el navegador almacena y que se envían en cada petición HTTP al servidor. Se usan normalmente para mantener sesiones, recordar preferencias y autenticación. Tienen fecha de expiración definida.
+
+localStorage: Permite guardar información persistente en el navegador, accesible únicamente desde JavaScript y por el mismo dominio. Los datos persisten aún después de cerrar el navegador.
+
+sessionStorage: Similar al localStorage, pero los datos solo se mantienen mientras la pestaña o ventana del navegador está abierta; al cerrarla, se eliminan automáticamente.
+
+Proceso de renderizado del navegador
+El navegador sigue varios pasos para mostrar una web:
+
+Recibe el HTML y lo analiza (parsea), construyendo el DOM (Document Object Model), una estructura en árbol de los elementos de la página.
+
+Analiza el CSS y genera el CSSOM (CSS Object Model) que representa los estilos aplicados.
+
+Combina DOM y CSSOM en el árbol de renderizado, que determina qué se debe mostrar.
+
+Calcula el diseño, posiciones y tamaños de cada elemento (layout).
+
+“Pinta” los elementos finalmente en pantalla (paint).
+
+Unidades em y rem
+em: Unidad de medida relativa en CSS, cuyo valor depende del tamaño de fuente del elemento padre.
+
+rem: Similar, pero siempre relativa al tamaño de fuente del elemento raíz (por lo general el <html>). Esto facilita crear diseños consistentes y escalables.
+
+Media queries y diseño responsivo
+Las media queries son reglas CSS que permiten adaptar los estilos de una web según características del dispositivo, como el ancho de pantalla, la orientación o la resolución. Son esenciales para lograr que los sitios sean usables tanto en móviles como en escritorio.
+
+Flexbox y Grid
+Flexbox: Sistema de diseño unidimensional para distribuir espacio entre elementos dentro de un contenedor flexible (display: flex), facilitando alineación, distribución y orden.
+
+CSS Grid: Sistema de diseño bidimensional que permite crear complejos layouts de filas y columnas (display: grid). Muy útil para diseños avanzados y responsivos.
+
+Especificidad en CSS
+La especificidad determina qué reglas de CSS se aplican cuando hay conflictos. Se priorizan así: estilos inline > IDs > clases/atributos > selectores de tipo (elementos). Comprender esto evita problemas con estilos que no se aplican como esperas.
+
+DOM Virtual
+El DOM virtual (Virtual DOM), usado por frameworks como React, es una representación en memoria del DOM real. Al cambiar algo, React modifica primero el virtual DOM y luego solo actualiza las partes necesarias del DOM real, optimizando el rendimiento de la aplicación.
+
+Event loop en JavaScript
+El event loop es el mecanismo de JavaScript que permite manejar la ejecución de código asíncrono. Gestiona la cola de tareas, ejecutando los callbacks pendientes cuando la pila de llamadas está vacía. Así, permite que la web siga “viva” mientras gestiona operaciones como peticiones de red o temporizadores.
+
+SSR (Server-side rendering)
+SSR consiste en renderizar el HTML de una web en el servidor y enviar la página ya lista al cliente. Esto mejora el rendimiento, la indexación SEO y la carga inicial de aplicaciones, especialmente en sitios con mucho contenido o requerimientos de accesibilidad.
+
+Content Security Policy (CSP)
+La CSP es una cabecera HTTP de seguridad que permite definir de qué fuentes un navegador puede cargar recursos (scripts, imágenes, estilos, etc). Es fundamental para evitar ataques XSS y proteger la integridad del sitio.
+
+Tree shaking
+Tree shaking es una técnica de optimización usada en el bundling de JavaScript, donde el empaquetador elimina el código que no se usa en la aplicación final, reduciendo el tamaño de los archivos y mejorando el rendimiento.

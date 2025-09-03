@@ -1,0 +1,72 @@
+Arquitectura Web: Modelo Cliente-Servidor
+La arquitectura web tradicional está basada en un modelo cliente-servidor, en el que el cliente (navegador del usuario) realiza peticiones al servidor (donde está alojada la aplicación web). El servidor procesa estas peticiones, accede a la base de datos si es necesario, y responde enviando páginas o datos al cliente. El protocolo principal de comunicación es HTTP o HTTPS. Esto implica entender conceptos como endpoints, rutas, peticiones (GET, POST, PUT, DELETE), cabeceras, cookies y sesiones.
+
+Frontend vs. Backend
+Frontend: Todo lo que el usuario ve y con lo que interactúa en la aplicación. Se desarrolla principalmente con HTML, CSS y JavaScript (más frameworks como React, Angular o Vue). Involucra conocimientos de diseño y experiencia de usuario (UX/UI), responsividad y accesibilidad.
+
+Backend: Todo lo que sucede en el “lado del servidor”. Aquí residen la lógica de negocio, la interacción con bases de datos, y la autenticación. Se usan lenguajes como PHP, Node.js, Python, Ruby. Incluye gestión de APIs, seguridad y lógica del servidor.
+
+HTML, CSS y JavaScript
+HTML (HyperText Markup Language): Es el esqueleto de toda web. Define la estructura y el contenido de las páginas usando etiquetas como <header>, <footer>, <section>, etc. La semántica es clave: usar etiquetas adecuadas facilita la accesibilidad y el SEO.
+
+CSS (Cascading Style Sheets): Da formato y estilo a la estructura HTML. Incluye el modelo de caja (content, padding, border, margin), selectores, pseudoclases, flexbox, grid y media queries (diseño responsive). Permite crear animaciones y transiciones.
+
+JavaScript: Lenguaje de programación que añade interactividad a la web. Controla eventos, manipula el DOM (árbol de la página), permite peticiones asíncronas (AJAX/fetch) y gestiona datos en el navegador (localStorage, sessionStorage, cookies). Conceptos clave: alcance de variables, promesas, funciones flecha, callbacks, asincronía.
+
+Bases de Datos y SQL
+Bases relacionales (SQL): Como MySQL o PostgreSQL, organizan la información en tablas con filas y columnas. Usan el lenguaje SQL para crear, consultar, modificar y borrar datos.
+
+Bases no relacionales: Como MongoDB, almacenan datos en documentos tipo JSON. Son ideales para datos no estructurados o aplicaciones con crecimiento rápido.
+
+La teoría esencial incluye saber diseñar una base de datos, normalización, relaciones (uno a uno, uno a muchos) y realizar consultas básicas (SELECT, INSERT, UPDATE, DELETE).
+
+HTTP, Solicitudes y Métodos
+El protocolo HTTP define cómo se comunican cliente y servidor. Los métodos más usados son:
+
+GET: Solicita datos (p. ej., cargar una página).
+
+POST: Envía datos al servidor (p. ej., enviar un formulario).
+
+PUT/PATCH: Modifican datos existentes.
+
+DELETE: Elimina datos.
+Es fundamental entender el ciclo de vida de una petición, los códigos de estado (200 OK, 404 Not Found, 500 Internal Server Error), y los headers.
+
+Principios y Buenas Prácticas: DRY y KISS
+DRY (Don’t Repeat Yourself): Prohíbe la duplicación de código. Reutilizar funciones y componentes facilita el mantenimiento.
+
+KISS (Keep It Simple, Stupid): Favorece soluciones simples y fácilmente entendibles.
+
+Documentar el código, escribir nombres claros y estructurar en módulos o archivos separados son buenas prácticas esenciales.
+
+Seguridad Web
+Validación y Sanitización: Comprobar que los datos recibidos del usuario sean correctos y limpiar caracteres peligrosos.
+
+Vulnerabilidades comunes:
+
+XSS (Cross Site Scripting): Inyección de scripts maliciosos en páginas web.
+
+SQL Injection: Manipulación de consultas SQL a través de entradas inseguras.
+
+Gestión de sesiones y contraseñas: Guardar contraseñas cifradas, uso de tokens para autenticación y regirse por el principio de mínimos privilegios.
+
+Control de Versiones con Git
+Sistema para registrar y gestionar los cambios en el código fuente.
+
+Commit: Guarda un conjunto de cambios.
+
+Branch: Crea una “rama” para trabajar de forma aislada.
+
+Merge: Combina ramas.
+Esto permite trabajo colaborativo y recuperación fácil en caso de errores.
+
+Despliegue de Aplicaciones Web
+Consiste en poner la aplicación accesible en Internet.
+
+Configuración de servidores, dominios y certificados SSL.
+
+Automatización del despliegue usando herramientas CI/CD (Integración y Entrega Continua).
+
+Saber revertir cambios en caso de errores.
+
+Copias de seguridad y manejo de logs para detectar fallos tras el despliegue.
